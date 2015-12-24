@@ -1,5 +1,5 @@
 # SublimeRosAssist
-A simple sublime-text-3 plugin make life easier for handling ROS projects
+A simple sublime-text-3 plugin that make life easier for handling ROS projects
 
 ## Main Functions
 
