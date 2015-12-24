@@ -1,0 +1,20 @@
+{
+	"extra_flags_for_clang":
+	[
+		"-Wall",
+		"-Wextra",
+		// "-Werror",
+		"-DNDEBUG",
+		"-std=c++11",
+		"-x",
+		"c++",
+		"-I",
+		".",
+		"-isystem", "/usr/lib/llvm-3.4/lib/clang/3.4/include/",
+		"-isystem", "/opt/ros/indigo/include/",
+		"-isystem", "/usr/include/",
+		"-isystem", "/usr/include/c++/4.8",
+		"-isystem", "/usr/include/x86_64-linux-gnu/",
+		"-isystem", "/usr/include/x86_64-linux-gnu/c++/4.8/",
+	]
+}

@@ -1,0 +1,37 @@
+[    
+    {     
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "mnemonic": "P",
+                "children":
+                [
+                    {
+                        "caption": "SublimeRosAssist",
+                        "children":
+                        [         
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/SublimeRosAssist/sublime_ros_assist.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/User/sublime_ros_assist.sublime-settings"
+                                }
+                            },
+                            { "caption": "-" },
+                        ]
+                    }
+                ]
+            }
+        ]
+    }           
+]
