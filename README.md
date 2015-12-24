@@ -5,13 +5,13 @@ A simple sublime-text-3 plugin make life easier for handling ROS projects
 
 ### SublimeRosAssistRevealPackage
 
-Usage: input `rosassistrevealpackage` in command palette or call sublime_ros_assist_reveal_package in run_commands()
+Usage: input `rosassistrevealpackage` in `command palette` or call `sublime_ros_assist_reveal_package` in `run_commands()`
 
 Description: scan the project folders, find ros workspace, list all catkin packages, expand the choosen package in the side bar.
 
 ### SublimeRosAssistGenerateClangFlags
 
-Usage: input `rosassistgenerateclangflags` in command palette or call sublime_ros_assist_generate_clang_flags in run_commands()
+Usage: input `rosassistgenerateclangflags` in `command palette` or `call sublime_ros_assist_generate_clang_flags` in `run_commands()`
 
 Description: scan the project folders, find ros workspace, scan all catkin packages, generate compile flags for clang consists of:
 
