@@ -16,5 +16,8 @@
 		"-isystem", "/usr/include/c++/4.8",
 		"-isystem", "/usr/include/x86_64-linux-gnu/",
 		"-isystem", "/usr/include/x86_64-linux-gnu/c++/4.8/",
+		"-isystem", "/usr/include/eigen3",
+		"-isystem", "/usr/include/opencv/",
+		"-isystem", "/usr/include/opencv2/",
 	]
 }
