@@ -116,7 +116,7 @@ class SublimeRosAssistShowYcmExtraConfCommand(sublime_plugin.WindowCommand):
         package_path = os.path.join(sublime.packages_path(), "SublimeRosAssist")
         content = None
         try:
-            with open(os.path.join(package_path, 'ycm_extra_conf.py')) as f:
+            with open(os.path.join(package_path, 'ycm_extra_conf.py.txt')) as f:
                 content = f.read()
             if content:
                 newview = sublime.active_window().new_file();
@@ -132,4 +132,4 @@ class SublimeRosAssistShowYcmExtraConfCommand(sublime_plugin.WindowCommand):
         except Exception as e:
             sublime.error_message("Some error occured!")
             raise
-            
+
