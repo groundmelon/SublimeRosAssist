@@ -19,5 +19,5 @@
 		"-isystem", "/usr/include/eigen3",
 		"-isystem", "/usr/include/opencv/",
 		"-isystem", "/usr/include/opencv2/",
-	]
+	],
 }

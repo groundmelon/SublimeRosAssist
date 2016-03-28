@@ -1,4 +1,5 @@
 [
 	{ "caption": "SublimeRosAssist: Generate Clang Flags", "command": "sublime_ros_assist_generate_clang_flags" },
 	{ "caption": "SublimeRosAssist: Reveal Package", "command": "sublime_ros_assist_reveal_package" },
+	{ "caption": "SublimeRosAssist: Show ycm_extra_conf", "command": "sublime_ros_assist_show_ycm_extra_conf" },
 ]

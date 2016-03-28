@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 import os
+import errno
 
 
 def oprint(s):
@@ -105,3 +106,30 @@ class SublimeRosAssistGenerateClangFlagsCommand(sublime_plugin.WindowCommand):
             active_window.show_quick_panel(proj_paths, self.finish, 0, 0)
         else:
             self.finish(0)
+
+class SublimeRosAssistInsertContentCommand(sublime_plugin.TextCommand):
+    def run(self, edit, value=None):
+        self.view.insert(edit, 0, value)
+
+class SublimeRosAssistShowYcmExtraConfCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        package_path = os.path.join(sublime.packages_path(), "SublimeRosAssist")
+        content = None
+        try:
+            with open(os.path.join(package_path, 'ycm_extra_conf.py')) as f:
+                content = f.read()
+            if content:
+                newview = sublime.active_window().new_file();
+                newview.run_command('sublime_ros_assist_insert_content', dict(value = content))
+                newview.set_name(".ycm_extra_conf.py")
+                newview.set_syntax_file('Packages/Python/Python.sublime-syntax')
+        except OSError as e:
+            if e.errno == errno.ENOENT:
+                sublime.error_message("No ycm_extra_conf.py in the package path!")
+            else:
+                sublime.error_message("Some error occured!")
+                raise
+        except Exception as e:
+            sublime.error_message("Some error occured!")
+            raise
+            
